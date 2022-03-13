@@ -1,1 +1,2 @@
-# Vulpes-DTD
+# Vulpes-DTD | WIP!
+Schema definitions for json

@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "2",
+    "title": "Item",
+    "properties": {
+      "item": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "$defs": {
+      "item": {
+        "required": ["name", "namespace", "customModelData"],
+        "name": {
+          "type": "string",
+          "description": "Name from the item"
+        },
+        "namespace": {
+          "type": "string",
+          "description": "The namespace from the item. Starts with minecraft:<material>"
+        },
+        "customModelData": {
+          "type": "integer",
+          "description": "The id for the custom model"
+        }
+      }
+    }
+  }
