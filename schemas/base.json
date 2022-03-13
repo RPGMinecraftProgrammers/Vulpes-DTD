@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "title": "Base",
+    "$id": "0",
+    "required": ["generator"],
+    "properties": {
+      "generator": {
+        "type": "string",
+        "description": "Name of generator"
+      }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "$schema": "../schemas/item.json",
+    "generator": "ItemGenerator",
+    "item": {
+        "name":"SimpleStoneItem",
+        "namespace":"minecraft",
+        "customModelData": 0
+    }
+}

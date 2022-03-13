@@ -2,11 +2,19 @@
     "$schema": "http://json-schema.org/schema#",
     "$id": "2",
     "title": "Item",
+    "description": "A item",
+    "type": "object",
+    "required": [ "item" ],
     "properties": {
       "item": {
         "$ref": "#/$defs/item"
       }
     },
+    "allOf": [
+      {
+        "$ref": "base.json"
+      }
+    ],
     "$defs": {
       "item": {
         "required": ["name", "namespace", "customModelData"],

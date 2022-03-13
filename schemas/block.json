@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "Blocks",
+  "$id": "1",
+  "properties": {
+    "data": {
+      "type": "array",
+      "description": "Array of blocks",
+      "items": {
+        "$ref": "#/$defs/block"
+      }
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "base.json"
+    }
+  ],
+  "$defs": {
+    "block": {
+      "type": "object",
+      "required": [
+        "name",
+        "customModelData",
+        "textures"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name for the block"
+        },
+        "customModelData": {
+          "type": "integer",
+          "description": "The customModelData ID"
+        },
+        "textures": {
+          "type": "array",
+          "description": "The array which includes the textures",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
