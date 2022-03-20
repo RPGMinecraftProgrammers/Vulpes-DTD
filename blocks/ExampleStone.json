@@ -1,0 +1,9 @@
+{
+    "$schema": "../schemas/block.json",
+    "generator": "",
+    "block": {
+        "namespace": "minecraft:stone",
+        "name": "MinecraftExampleStone",
+        "customModelData": 0
+    }
+}
