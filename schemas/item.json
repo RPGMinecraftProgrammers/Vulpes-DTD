@@ -29,7 +29,11 @@
         "customModelData": {
           "type": "integer",
           "description": "The id for the custom model"
+        },
+        "amount": {
+          "type": "integer",
+          "description": "The amount for the stack"
         }
       }
     }
-  }
+}
