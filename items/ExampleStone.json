@@ -4,6 +4,26 @@
     "item": {
         "name":"SimpleStoneItem",
         "namespace":"minecraft:stone",
-        "customModelData": 0
+        "customModelData": 0,
+        "displayName": "§6JustATest",
+        "itemFlags": [
+            "HIDE_ATTRIBUTES",
+            "HIDE_DESTROYS",
+            "HIDE_DYE",
+            "HIDE_ENCHANTS",
+            "HIDE_PLACED_ON",
+            "HIDE_POTION_EFFECTS",
+            "HIDE_UNBREAKABLE"
+        ],
+        "lore": [
+            "Just a item lore"
+        ],
+        "amount": 5,
+        "enchantments": [
+            {
+                "namespace": "minecraft:mending",
+                "level": 1
+            }
+        ]
     }
 }
