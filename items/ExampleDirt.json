@@ -1,0 +1,9 @@
+{
+    "$schema": "../schemas/item.json",
+    "generator": "ItemGenerator",
+    "item": {
+        "name":"SimpleDirtItem",
+        "namespace":"minecraft:dirt",
+        "customModelData": 0
+    }
+}
