@@ -1,0 +1,9 @@
+{
+  "generator": "Notification",
+  "notification": {
+    "namespace": "minecraft:dirt",
+    "name": "example",
+    "title": "Hello world!",
+    "frameType": "TASK"
+  }
+}
