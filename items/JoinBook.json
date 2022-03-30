@@ -1,0 +1,10 @@
+{
+    "$schema": "../schemas/item.json",
+    "generator": "ItemGenerator",
+    "item": {
+        "name": "JoinBook",
+        "namespace": "minecraft:book",
+        "customModelData": 10,
+        "displayName": "§cJoinBook"
+    }
+}
