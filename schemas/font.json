@@ -24,11 +24,11 @@
       },
       "height": {
         "type": "integer",
-        "description": "The id for the custom model"
+        "description": "The given height for the font symbol"
       },
       "ascent": {
         "type": "integer",
-        "description": "The amount for the stack"
+        "description": "<Improve>"
       },
       "chars": {
         "type": "array",
