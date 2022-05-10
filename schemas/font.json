@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/schema#",
+  "$id": "3",
+  "title": "Font",
+  "description": "Font file",
+  "type": "object",
+  "required": [ "font" ],
+  "properties": {
+    "item": {
+      "$ref": "#/$defs/font"
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "base.json"
+    }
+  ],
+  "$defs": {
+    "font": {
+      "required": ["shift", "height", "ascent", "chars"],
+      "shift": {
+        "type": "array",
+        "description": "Contains the shift for the font symbol"
+      },
+      "height": {
+        "type": "integer",
+        "description": "The id for the custom model"
+      },
+      "ascent": {
+        "type": "integer",
+        "description": "The amount for the stack"
+      },
+      "chars": {
+        "type": "array",
+        "description": "What ever"
+      }
+
+    }
+  }
+}
