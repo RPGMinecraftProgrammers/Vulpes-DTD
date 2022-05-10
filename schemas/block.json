@@ -1,14 +1,12 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "title": "Blocks",
+  "title": "Block",
   "$id": "1",
+  "type": "object",
+  "required": [ "block" ],
   "properties": {
-    "data": {
-      "type": "array",
-      "description": "Array of blocks",
-      "items": {
-        "$ref": "#/$defs/block"
-      }
+    "block": {
+      "$ref": "#/$defs/block"
     }
   },
   "allOf": [
@@ -22,12 +20,16 @@
       "required": [
         "name",
         "customModelData",
-        "textures"
+        "namespace"
       ],
       "properties": {
         "name": {
           "type": "string",
           "description": "The name for the block"
+        },
+        "namespace": {
+          "type": "string",
+          "description": "The namespace from the block. Starts with minecraft:<material>"
         },
         "customModelData": {
           "type": "integer",

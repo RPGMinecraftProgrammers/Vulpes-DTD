@@ -1,9 +1,8 @@
 {
-    "$schema": "http://json-schema.org/schema#",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "2",
     "title": "Item",
     "description": "A item",
-    "type": "object",
     "required": [ "item" ],
     "properties": {
       "item": {
@@ -16,11 +15,42 @@
       }
     ],
     "$defs": {
+      "enchantment": {
+        "required": ["namespace", "level"],
+        "namespace": {
+          "type": "string",
+          "description": "The namespace from the enchantment. Starts with minecraft:<material>"
+        },
+        "level": {
+          "type": "number",
+          "description": "The level from the enchantment. Starts with minecraft:<material>"
+        }
+      },
       "item": {
         "required": ["name", "namespace", "customModelData"],
         "name": {
           "type": "string",
+          "description": "Name for generation"
+        },
+        "displayName": {
+          "type": "string",
           "description": "Name from the item"
+        },
+        "itemFlags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "lore": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "enchantments": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/enchantment" }
         },
         "namespace": {
           "type": "string",
